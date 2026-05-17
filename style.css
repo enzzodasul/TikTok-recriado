@@ -70,5 +70,21 @@ ou espessura da barra de rolagem de um elemento quando mostrado. */
     height: 100%;
 }
 
+/*POSIÇÃO RELATIVA, A 48% DO TOPO E A 10PX DA DIREITA*/
+.videoSidebar{
+    position:absolute;
+    top: 48%;
+    right: 10px;
+}
 
+/*ICONES COM TAMANHO 28PX  E O CURSOR VIRA UMA MAO EM CIMA DELES*/
 
+.videoSidebar .material-icons {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.videoSidebar__button{
+    padding: 20px;
+    text-align: center;
+}
