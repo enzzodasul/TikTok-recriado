@@ -50,5 +50,25 @@ ou espessura da barra de rolagem de um elemento quando mostrado. */
     -ms-overflow-stye:none;
     scrollbar-width: none;
 }
+ /*o espaço do video terá a posição relativa, altura e largura preencheendo a tela,
+ cor de fundo branca
+ a scroll-snap-align especifica a posição de encaixe da caixa como um alinhamento de sua área de encaixe
+ (como o assunto de alinhamento) dentro do snapport de seu recipiente
+ de encaixe (como o recipiente de alinhamento).*/
+
+ .video {
+    position: realtive;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    scroll-snap-align: start;
+ }
+
+.video__player {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 
 

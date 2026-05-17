@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -6,12 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TikTok</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
-       <div class="app__videos"></div>
+    <div class="app__videos">
+      <div class="video">
+        <video class="video__player" src="videos/video1.mp4"></video>
+        <div class="videoSidebar">
+          <!--ICONE DE CURTIR-->
+          <div class="divSidebar__button">
+            <span class="material-icons">favorite_border</span>
+            <p>1.429</p>
+          </div>
 
+          <!--ICONE DE COMENTAR-->
+          <div class="divSidebar__button">
+            <span class="material-icons">message</span>
+            <p>345</p>
+          </div>
 
+          <!--ICONE DE COMPARTILHAR-->
+          <div class="divSidebar__button">
+            <span class="material-icons">share</span>
+            <p>75</p>
+          </div>
+        </div>
 
+        <div class="videoFooter">
+            <div class="videoFooter__text">
+                <h3>@Usuario</h3>
+                <p class="videoFooter__description">
+                    A receita da nossa Pizza esta disponível no nosso site
+                </p>
+                <div class="videoFooter__tiket">
+                    <span class="material-icons videoFooter__icon">music_note                        
+                    </span>
+                    <marquee>AUDIO ORIGINAL DO USUARIO</marquee>
+                </div>
+            </div>
+            <img src="https://static.thenounproject.com/png/934821-200.png" 
+            alt="" class="videoFooter__record">
+        </div>
+
+      </div>
+    </div>
   </body>
- </html>
+</html>
