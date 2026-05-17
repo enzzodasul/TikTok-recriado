@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* DEEFINE A ROLAGEM VERTICAL*/
+html {
+    scroll-snap-type: y mandatory;
+}
+
+
+/*COR DE TEXTOS BRANCA,COR DE FUNDO PRETA, ALTURA VH
+A MEDIDA VH É IGUAL A 1/100 DA ALTURA DA VIEWPORT
+SE A ALTURA DO NAVEGADOR É 900PX, 1VH EQUIVALE A 9PX.
+DISPLAY EM GRADE, COM ITENS CENTRALIZADOS*/
+
+body {
+    color:white;
+    background-color: black;
+    display:grid;
+    place-items: center;
+}
+
+/*SE O CONTEUDO ESTOURAR A TELA , É CORTADO E GANHA BARRA DE ROLAGEM,
+LARGURA 100% DO QUE ESTIVER DISPONIVEL, MÁXIMO DE 400PX,
+ROLAGEM VERTICAL E ARREDONDADO EM 20PX*/
+.app__videos{
+    position:relative;
+    height:750px;
+    background-color: white;
+    overflow: scroll;
+    width: 100%;
+    max-width: 400px;
+    scroll-snap-type: y mandatory;
+    border-radius: 20px;
+}
+
+/*barra de rolagem*/
+.app__videos::-webkit-scrollbar{
+    display: none;
+}
+
+/* é uma propriedade CSS proprietária,
+específica do Internet Explorer e do Microsoft Edge,
+que controla o comportamento das barras de rolagem quando o
+conteúdo de um elemento transborda. */
+/* A propriedade scrollbar-width é usada para definir a largura
+ou espessura da barra de rolagem de um elemento quando mostrado. */
+.app__videos{
+    -ms-overflow-stye:none;
+    scrollbar-width: none;
+}
+
+
