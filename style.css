@@ -140,3 +140,25 @@ DISPLAY FLEXIVEL E ITENS ALINHADOS AO CENTRO*/
     display: flex;
     align-items: center;
 }
+/*NOME DA MUSICA COM ALTURA AJUSTADA, MARGEM ESQUERDA DE 30PX,
+E OCUPARA 60% DA LARGURA DISPONIVEL*/
+.videoFooter__ticket marquee {
+    height: fit-content;
+    margin-left: 30px;
+    width: 70%;
+}
+
+/*descrição do video padding com 20px em todas as direções*/
+.videoFooter__description {
+    padding-bottom: 20px;
+}
+
+/*AJUSTE DE MIDIA*/
+@media (max-width: 425px) {
+    .app__videos {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
