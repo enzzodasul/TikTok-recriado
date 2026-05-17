@@ -89,7 +89,7 @@
             <div class="videoFooter__text">
                 <h3>@Usuario_2</h3>
                 <p class="videoFooter__description">
-                   compre ja nossa pizza
+                   compre ja nossa pizza deliciosa e quentinha 
                 </p>
                 <div class="videoFooter__ticket">
                     <span class="material-icons videoFooter__icon">music_note                        
@@ -110,8 +110,20 @@
 
 
 
+<script type="text/javascript">
+    const videos = document.querySelectorAll('video');
 
- 
+    for(const video of videos){
+        video.addEventListener('click',function(){
+            if(video.paused){
+                video.play();
+            } else{
+                video.pause();
+            }
+        })
+    }
+</script>
+
 
     </div>
   </body>
